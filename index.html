@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bylally.com</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for Inter font and general body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark background */
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Center content vertically and horizontally */
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #e2e8f0; /* Light text color for body */
+        }
+        .container {
+            background-color: #2d3748; /* Slightly lighter dark for container */
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Darker, more prominent shadow */
+            padding: 3rem;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        h1 {
+            font-size: 3.5rem; /* Larger heading */
+            font-weight: 800; /* Extra bold */
+            color: #63b3ed; /* Vibrant blue for the title */
+            margin-bottom: 1rem;
+            text-shadow: 0 0 10px rgba(99, 179, 237, 0.4); /* Subtle glow effect */
+        }
+        .link-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .app-link {
+            background-color: #4299e1; /* Blue button */
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 0.75rem; /* More rounded corners for links */
+            font-weight: 700; /* Bold text */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out, box-shadow 0.2s ease-in-out;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Deeper shadow */
+            display: block; /* Make the whole link block clickable */
+        }
+        .app-link:hover {
+            background-color: #3182ce; /* Darker blue on hover */
+            transform: translateY(-2px); /* Lift effect */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35); /* More prominent shadow on hover */
+        }
+        .app-link:active {
+            transform: translateY(0);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        p {
+            color: #cbd5e0; /* Lighter gray for paragraph text */
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>bylally.com</h1>
+        <p>Welcome to my personal corner of the web! Explore my projects below.</p>
+
+        <div class="link-section">
+            <a href="/sand-falling-webpage/" class="app-link">
+                Sand Falling Webpage
+            </a>
+            <a href="/barbell-plate-calculator/" class="app-link">
+                Barbell Plate Calculator
+            </a>
+        </div>
+    </div>
+</body>
+</html>
